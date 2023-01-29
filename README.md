@@ -24,4 +24,4 @@ password = generate_password(64)
 ```
 
 ## Maintainer
-- ![Brian Obot]('https://www.github.com/brianobot/') <brianobot9@gmail.com>
+- [Brian Obot]('https://www.github.com/brianobot/') <brianobot9@gmail.com>
