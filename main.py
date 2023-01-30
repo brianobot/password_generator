@@ -7,7 +7,7 @@ as defined in the global scope of the script module.
 Copyright 2023 Brian Obot
 """
 
-from string import ascii_letters, digits, punctuation
+from string import ascii_letters, digits
 from random import choice
 
 DEFAULT_PASSWORD_LENGTH = 8
@@ -18,7 +18,7 @@ except:
     arg = DEFAULT_PASSWORD_LENGTH
 
 def generate_password(length=None):
-    ALL_CHARS = ascii_letters + digits + punctuation
+    ALL_CHARS = ascii_letters + digits
     password = []
     for char in range(length):
         password.append(choice(ALL_CHARS))
