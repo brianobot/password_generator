@@ -1,7 +1,7 @@
 # Password Generator
 
 ## Description
-Pure python password generator.
+Pure python password generator to generate incredibly secure and randomized passwords.
 
 ## Usage
 The script has to be used as standalone script with command line arguments or
