@@ -4,13 +4,13 @@
 Pure python password generator.
 
 ## Usage
-The script has be used as standalone script with command line arguments or
+The script has to be used as standalone script with command line arguments or
 can be imported or called by another python program/script
 
 Command Line Usage
-- `python main.py` # generate a password of with module default length string 
-- `python main.py 8` # generate a password of 8-length string 
-- `python main.py 64` # generate a password of 64-length string
+- `python password_generator.py` # generate a password of with module default length string 
+- `python password_generator.py 8` # generate a password of 8-length string 
+- `python password_generator.py 64` # generate a password of 64-length string
 
 Used within a Python Program
 ```
