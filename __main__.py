@@ -9,9 +9,9 @@ Copyright @ 2023 Brian Obot
 """
 
 import sys
-
-from string import ascii_letters, digits, punctuation
 from random import choice
+from datetime import datetime
+from string import ascii_letters, digits, punctuation
 
 
 DEFAULT_PASSWORD_LENGTH = 16
@@ -34,6 +34,12 @@ def generate_password(length: int = None) -> str:
     return "".join(password)
 
 
+def log_password_generation(password: str):
+    with open("passwords.logs", "a+") as log_file:
+        log_file.write(f"[{datetime.now()}]: {password}\n")
+
+
 if __name__ == "__main__":
     password = generate_password(arg)
+    log_password_generation(password)
     print(f"Generated Password : \n{password}")
