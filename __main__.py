@@ -52,7 +52,6 @@ def format_display(password: str):
     print(f"Generated Password\n{'-' * len(password)}\n{password}\n{'-' * len(password)}")
 
 
-
 if __name__ == "__main__":
     password = generate_password(arg)
     log_password_generation(password) if not DISABLE_PASSWORD_LOGGING else None

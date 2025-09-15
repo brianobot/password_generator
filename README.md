@@ -1,6 +1,4 @@
 # Password Generator
-
-## Description
 Pure python password generator to generate incredibly secure and randomized passwords.
 
 ## Usage
