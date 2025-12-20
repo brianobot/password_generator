@@ -13,12 +13,23 @@ import sys
 from random import choice
 from datetime import datetime
 from string import ascii_letters, digits, punctuation
+from pydantic_settings import BaseSettings, SettingsConfigDict
+
+
+class Settings(BaseSettings):
+    model_config = SettingsConfigDict(env_file=".env")
+    
+    LOGFILE: str = "passwords.log"
+    
+
+settings = Settings()
+
 
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 
 DEFAULT_PASSWORD_LENGTH: int = 16
 DISABLE_PASSWORD_LOGGING: bool = False
-DEFAULT_PASSWORD_LOG_FILE: str = os.path.join(BASE_PATH, "passwords.log")
+DEFAULT_PASSWORD_LOG_FILE: str = os.path.join(BASE_PATH, settings.LOGFILE)
 
 
 if len(sys.argv) > 1:

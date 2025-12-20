@@ -1,4 +1,6 @@
+.env
 venv/
 *.log
+nyed_ibad.eto
 *__pycache__*
 .pytest_cache
